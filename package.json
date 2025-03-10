@@ -1,0 +1,32 @@
+{
+  "name": "cypressexam3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open:cypress": "npx cypress open",
+    "run:scripts": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orcishbolo/CypressExam3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orcishbolo/CypressExam3/issues"
+  },
+  "homepage": "https://github.com/orcishbolo/CypressExam3#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@types/cypress": "^1.1.6",
+    "cypress": "^14.1.0",
+    "cypress-file-upload": "^5.0.8",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "cypress-plugin-steps": "^1.1.1",
+    "cypress-plugin-xhr-toggle": "^1.2.1"
+  }
+}
