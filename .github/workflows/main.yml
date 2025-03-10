@@ -5,7 +5,7 @@ on:
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -16,3 +16,4 @@ jobs:
         with:
           run: npm start # Replace with your start command if different
           browser: chrome # Or edge, firefox, electron
+          spec: "cypress/e2e/**/*.{js,jsx,ts,tsx}"
