@@ -1,0 +1,18 @@
+name: Run Cypress Tests
+
+on:
+  push:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: npm install
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          run: npm start # Replace with your start command if different
+          browser: chrome # Or edge, firefox, electron
